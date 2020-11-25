@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link type="text/css" href="style.css"/>
+    <title>Weather forecast</title>
+</head>
+
+<body>
+
+<div>
+    <h1>Orų prognozė</h1>
+    <form method="post" class="forecast-form">
+        <label for="place-choice">Pasirinkti vietovę:</label>
+        <input list="places" id="place-choice" name="place-choice" autocomplete="off" required>
+        <datalist id="places"></datalist>
+        <button type="submit" class="weather">
+            Gauti prognozę
+        </button>
+    </form>
+
+    <p class="forecast-loader">
+        Prašome palaukti...
+    </p>
+
+    <div class="forecast-results"></div>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
